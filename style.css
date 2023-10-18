@@ -36,6 +36,10 @@ html::-webkit-scrollbar-thumb {
   background: var(--blue);
 }
 
+section {
+  padding: 5rem 10%;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -88,10 +92,16 @@ html::-webkit-scrollbar-thumb {
   .header {
     padding: 1.5rem 2rem;
   }
+  .header section {
+    padding: 3rem 5%;
+  }
 }
 @media (max-width: 1200px) and (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
   }
   .header #menu-btn {
     display: none;
@@ -171,4 +181,29 @@ html::-webkit-scrollbar-thumb {
   color: var(--light-color);
   text-transform: capitalize;
   line-height: 1.5;
+}
+
+.hero {
+  padding: 0;
+}
+.hero .slide {
+  min-height: 60rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.hero .slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, var(--white), transparent);
+}
+.hero .slide .content {
+  width: 50rem;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
