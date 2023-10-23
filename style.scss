@@ -312,4 +312,21 @@ section {
       }
     }
   }
+  .box-container {
+    margin-top: 3rem;
+    @include grid(16rem);
+
+    .box {
+      text-align: center;
+      background: var(--light-bg);
+      padding: 3rem 2rem;
+
+      h3 {
+        @include titleText(4rem);
+      }
+      p {
+        @include graphText(1.5rem);
+      }
+    }
+  }
 }
