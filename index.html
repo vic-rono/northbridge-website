@@ -11,6 +11,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -57,41 +62,64 @@
 
     <!-- hero section -->
     <section class="hero" id="hero">
-      <div class="hero-carousel">
-        <div class="w">
+      <div class="swiper hero-carousel">
+        <div class="swiper-wrapper">
           <!--stock imagesfrom unsplash.com -->
           <section
-            class="slide"
-            style="background: url(images/building.jpg) no-repeat;"
+            class="swiper-slide slide"
+            style="background: url(images/building.jpg) no-repeat"
           >
-          <div class="content">
-            <h3>For Your Building Needs</h3>
-            <p>For a concrete future</p>
-          </div>
-        </section>
-        <section
-            class="slide"
-            style="background: url(images/roads.jpg) no-repeat;"
+            <div class="content">
+              <h3>For Your Building Needs</h3>
+              <p>A concrete future</p>
+            </div>
+          </section>
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/roads.jpg) no-repeat"
           >
-          <div class="content">
-            <h3>For Your Road Works Needs</h3>
-            <p>Fulfill your journey</p>
-          </div>
-        </section>
-        <section
-            class="slide"
-            style="background: url(images/water.jpg) no-repeat;"
+            <div class="content">
+              <h3>For Your Road Works Needs</h3>
+              <p>Fulfill your journey</p>
+            </div>
+          </section>
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/water.jpg) no-repeat"
           >
-          <div class="content">
-            <h3>For Your Water Works Needs</h3>
-            <p>Drink water, i guess</p>
-          </div>
-        </section>
+            <div class="content">
+              <h3>For Your Water Works Needs</h3>
+              <p>We provide homes with water</p>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+      <h1 class="heading">About Us</h1>
+      <div class="row">
+        <div class="video">
+          ..
+          <video src="images/about.mp4" loop muted autoplay></video>
+        </div>
+        <div class="content">
+          <h3>Building the future</h3>
+          <p>
+            Northbridge Technologies Limited is construction company formed in
+            the year 2015.
+          </p>
+          <a href="#services" class="btn">Learn more</a>
         </div>
       </div>
     </section>
 
     <!--link js file-->
+
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </body>
 </html>

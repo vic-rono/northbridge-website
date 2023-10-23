@@ -16,5 +16,14 @@ document.querySelector("#close-contact-info").onClick = () => {
 
 window.onscroll = () => {
   navbar.classList.remove("active");
-  contactInfo.classList.remove("active")
+  contactInfo.classList.remove("active");
 };
+
+const swiper = new Swiper(".hero-carousel", {
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
