@@ -330,3 +330,31 @@ section {
     }
   }
 }
+
+.services {
+  background: var(--light-bg);
+
+  .box-container {
+    @include grid(25rem);
+    .box {
+      text-align: center;
+      padding: 3rem;
+      background: var(--white);
+      box-shadow: var(--box-shadow);
+      border-style: groove;
+
+      &:hover img{
+        transform:translateY(-1rem);
+      }
+
+      img {
+        height: 10rem;
+        margin-bottom: 1rem;
+      }
+      h3 {
+        @include titleText(2rem);
+        padding:1rem 0;
+      }
+    }
+  }
+}
