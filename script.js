@@ -19,6 +19,7 @@ window.onscroll = () => {
   contactInfo.classList.remove("active");
 };
 
+//carousel from swiperjs.com
 const swiper = new Swiper(".hero-carousel", {
   loop: true,
   grabCursor: true,

@@ -333,4 +333,28 @@ section {
   color: var(--black);
   text-transform: capitalize;
   padding: 1rem 0;
+}
+
+.projects {
+  background: var(--black);
+}
+.projects .heading {
+  color: var(--white);
+}
+.projects .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.projects .box-container .box {
+  cursor: initial;
+}
+.projects .box-container .box .image {
+  height: 40rem;
+  overflow: hidden;
+}
+.projects .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
