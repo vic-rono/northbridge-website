@@ -28,3 +28,5 @@ const swiper = new Swiper(".hero-carousel", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//const gallery = new lightGallery(document.querySelctor('.projects .box-container'))

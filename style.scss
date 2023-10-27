@@ -370,6 +370,9 @@ background: var(--black);
     @include grid(30rem);
     .box {
       cursor: initial;
+      &:hover .image img{
+        transform: scale(1.1);
+      }
       .image {
         height: 40rem;
         overflow: hidden;
@@ -379,6 +382,32 @@ background: var(--black);
           width: 100%;
           object-fit: cover;
         }
+      }
+      .content{
+        display: flex;
+        gap:.5rem;
+        background: var(--white);
+        justify-content: space-between;
+
+      .info{
+        padding:1rem;
+
+        h3{
+          @include titleText(1.7rem)
+        }
+        p{
+          @include graphText(1.5rem);
+        }
+      }
+      i{
+        width: 6rem;
+        font-size: 3rem;
+        background: var(--blue);
+        color:var(--white);
+        cursor: pointer;
+        text-align: center;
+        line-height: 7.5rem;
+      }
       }
     }
   }

@@ -349,6 +349,9 @@ section {
 .projects .box-container .box {
   cursor: initial;
 }
+.projects .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
 .projects .box-container .box .image {
   height: 40rem;
   overflow: hidden;
@@ -357,4 +360,33 @@ section {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.projects .box-container .box .content {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--white);
+  justify-content: space-between;
+}
+.projects .box-container .box .content .info {
+  padding: 1rem;
+}
+.projects .box-container .box .content .info h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.projects .box-container .box .content .info p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-transform: capitalize;
+  line-height: 2;
+}
+.projects .box-container .box .content i {
+  width: 6rem;
+  font-size: 3rem;
+  background: var(--blue);
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+  line-height: 7.5rem;
 }/*# sourceMappingURL=style.css.map */
