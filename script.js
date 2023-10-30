@@ -1,5 +1,6 @@
 let navbar = document.querySelector(".header .navbar");
 let contactInfo = document.querySelector(".contact-info");
+
 //toggling the navbar on the burger
 document.querySelector("menu-btn").onClick = () => {
   navbar.classList.toggle("active");
@@ -29,4 +30,3 @@ const swiper = new Swiper(".hero-carousel", {
   },
 });
 
-//const gallery = new lightGallery(document.querySelctor('.projects .box-container'))

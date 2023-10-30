@@ -321,9 +321,6 @@ section {
   box-shadow: var(--box-shadow);
   border-style: groove;
 }
-.services .box-container .box:hover img {
-  transform: translateY(-1rem);
-}
 .services .box-container .box img {
   height: 10rem;
   margin-bottom: 1rem;
@@ -343,7 +340,7 @@ section {
 }
 .projects .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
 }
 .projects .box-container .box {
@@ -389,4 +386,16 @@ section {
   cursor: pointer;
   text-align: center;
   line-height: 7.5rem;
+}
+
+.contact {
+  background: var(--black);
+}
+.contact .heading {
+  color: var(--white);
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }/*# sourceMappingURL=style.css.map */
