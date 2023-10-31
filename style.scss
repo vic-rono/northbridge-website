@@ -85,6 +85,23 @@ section {
   border-left: 1rem solid var(--blue);
 }
 
+.btn{
+  display: inline-block;
+  margin-top:1rem;
+  padding: 1rem 3rem;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+
+  &:hover{
+    background: var(--blue);
+    //color: var(--whte);
+  }
+
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -418,5 +435,80 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
+
+    .map{
+      flex: 1 1 41rem;
+      width: 100%;
+    }
+
+    form{
+      flex: 1 1 41rem;
+      background:var(--white);
+      padding: 2rem;
+
+      h3{
+        @include titleText(2.5rem);
+        padding-bottom: 1rem;
+      }
+
+      .box{
+        margin:.7rem 0;
+        width: 100%;
+        padding: 1.5rem 0;
+        border-bottom: var(--border);
+        padding:1.2rem 1.4rem;
+        background:var(--light-bg);
+        font-size: 1.6rem;
+        color: var(--light-color);
+
+        &:focus{
+          border-color: var(--blue);
+        }
+        textarea{
+          height:15rem;
+          resize: none;
+        }
+      }
+    }
+  }
+}
+
+.fposts{
+  .slide{
+    width: 35rem;
+    text-align: center;
+
+    &:hover .image img{
+      transform: scale(1.1);
+    }
+
+    .image{
+      height: 25rem;
+      width: 90%;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-bottom: -3rem;
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .content{
+      padding:2rem;
+      padding-top: 4rem;
+      background: var(--white);
+
+      h3{
+        @include titleText(2rem);
+      }
+
+      p{
+        padding: 1rem 0;
+        @include graphText(1.4rem);
+      }
+    }
+
   }
 }
