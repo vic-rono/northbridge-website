@@ -499,6 +499,7 @@ section {
       padding:2rem;
       padding-top: 4rem;
       background: var(--white);
+      box-shadow: 0 0 1.5rem rgba(0,0,0,.2);
 
       h3{
         @include titleText(2rem);
@@ -510,5 +511,19 @@ section {
       }
     }
 
+  }
+}
+
+footer{
+  text-align: center;
+
+  .credit{
+    @include titleText(2rem);
+    margin-top: 2rem;
+    padding-top: 1rem;
+
+    span{
+      color:var(--blue)
+    }
   }
 }

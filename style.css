@@ -469,6 +469,7 @@ section {
   padding: 2rem;
   padding-top: 4rem;
   background: var(--white);
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 }
 .fposts .slide .content h3 {
   font-size: 2rem;
@@ -481,4 +482,18 @@ section {
   color: var(--light-color);
   text-transform: capitalize;
   line-height: 2;
+}
+
+footer {
+  text-align: center;
+}
+footer .credit {
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+footer .credit span {
+  color: var(--blue);
 }/*# sourceMappingURL=style.css.map */
