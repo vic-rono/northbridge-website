@@ -85,9 +85,9 @@ section {
   border-left: 1rem solid var(--blue);
 }
 
-.btn{
+.btn {
   display: inline-block;
-  margin-top:1rem;
+  margin-top: 1rem;
   padding: 1rem 3rem;
   background: var(--black);
   color: var(--white);
@@ -95,11 +95,10 @@ section {
   font-size: 1.7rem;
   text-transform: capitalize;
 
-  &:hover{
+  &:hover {
     background: var(--blue);
     //color: var(--whte);
   }
-
 }
 
 .header {
@@ -115,11 +114,10 @@ section {
   z-index: 1000;
   background: var(--white);
 
-  .logo {
-    @include titleText(2.5rem);
-  }
-  span {
-    color: var(--blue);
+  .logo img {
+    float: left;
+    height: 200px;
+    width: 200px;
   }
 
   .navbar a {
@@ -201,7 +199,7 @@ section {
   display: none;
 
   &.active {
-    box-shadow: 0 0 0 100vw rga(0, 0, 0, 0.7);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
     display: block;
   }
 
@@ -314,6 +312,8 @@ section {
     gap: 3rem;
     .video {
       flex: 1 1 41rem;
+      //background: blue;
+      box-shadow: 5px 5px 5px;
       video {
         width: 100%;
       }
@@ -426,46 +426,46 @@ section {
   }
 }
 
-.contact{
+.contact {
   background: var(--black);
-  .heading{
+  .heading {
     color: var(--white);
   }
-  .row{
+  .row {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
 
-    .map{
+    .map {
       flex: 1 1 41rem;
       width: 100%;
     }
 
-    form{
+    form {
       flex: 1 1 41rem;
-      background:var(--white);
+      background: var(--white);
       padding: 2rem;
 
-      h3{
+      h3 {
         @include titleText(2.5rem);
         padding-bottom: 1rem;
       }
 
-      .box{
-        margin:.7rem 0;
+      .box {
+        margin: 0.7rem 0;
         width: 100%;
         padding: 1.5rem 0;
         border-bottom: var(--border);
-        padding:1.2rem 1.4rem;
-        background:var(--light-bg);
+        padding: 1.2rem 1.4rem;
+        background: var(--light-bg);
         font-size: 1.6rem;
         color: var(--light-color);
 
-        &:focus{
+        &:focus {
           border-color: var(--blue);
         }
-        textarea{
-          height:15rem;
+        textarea {
+          height: 15rem;
           resize: none;
         }
       }
@@ -473,57 +473,56 @@ section {
   }
 }
 
-.fposts{
-  .slide{
+.fposts {
+  .slide {
     width: 35rem;
     text-align: center;
 
-    &:hover .image img{
+    &:hover .image img {
       transform: scale(1.1);
     }
 
-    .image{
+    .image {
       height: 25rem;
       width: 90%;
       overflow: hidden;
       margin: 0 auto;
       margin-bottom: -3rem;
 
-      img{
+      img {
         height: 100%;
         width: 100%;
         object-fit: cover;
       }
     }
-    .content{
-      padding:2rem;
+    .content {
+      padding: 2rem;
       padding-top: 4rem;
       background: var(--white);
-      box-shadow: 0 0 1.5rem rgba(0,0,0,.2);
+      box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 
-      h3{
+      h3 {
         @include titleText(2rem);
       }
 
-      p{
+      p {
         padding: 1rem 0;
         @include graphText(1.4rem);
       }
     }
-
   }
 }
 
-footer{
+footer {
   text-align: center;
 
-  .credit{
+  .credit {
     @include titleText(2rem);
     margin-top: 2rem;
     padding-top: 1rem;
 
-    span{
-      color:var(--blue)
+    span {
+      color: var(--blue);
     }
   }
 }
