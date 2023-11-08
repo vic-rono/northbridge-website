@@ -165,7 +165,7 @@ section {
       #menu-btn {
         display: inline-block;
       }
-    }
+    
     .navbar {
       position: absolute;
       top: 99%;
@@ -184,6 +184,7 @@ section {
         margin: 2rem;
       }
     }
+  }
   }
   @media (max-width: 450px) {
     html {
