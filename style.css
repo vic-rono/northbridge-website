@@ -77,9 +77,8 @@ section {
   background: var(--white);
 }
 .header .logo img {
-  float: left;
-  height: 200px;
-  width: 200px;
+  width: 150px;
+  height: auto;
 }
 .header .navbar a {
   font-size: 2rem;
@@ -125,7 +124,7 @@ section {
     padding: 3rem 2rem;
   }
   .header #menu-btn {
-    display: none;
+    display: inline-block;
   }
   .navbar {
     position: absolute;

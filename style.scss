@@ -114,10 +114,17 @@ section {
   z-index: 1000;
   background: var(--white);
 
-  .logo img {
-    float: left;
-    height: 200px;
-    width: 200px;
+  // .logo{
+  //   position: sticky;
+  //   width: 160px;
+  //   height: 200px;
+  //   //overflow: hidden;
+  // }
+
+  .logo img{
+    width: 150px;
+    height: auto;
+    //margin: -50px 0 0 -100px;
   }
 
   .navbar a {
@@ -156,7 +163,7 @@ section {
     }
     .header {
       #menu-btn {
-        display: none;
+        display: inline-block;
       }
     }
     .navbar {
