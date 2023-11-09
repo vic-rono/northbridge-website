@@ -22,8 +22,11 @@ window.onscroll = () => {
 
 //carousel from swiperjs.com
 const swiper = new Swiper(".hero-carousel", {
+  
   loop: true,
   grabCursor: true,
+  autoplay: {
+    delay: 4000},
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

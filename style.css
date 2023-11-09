@@ -274,7 +274,7 @@ section {
 }
 .about .row .video {
   flex: 1 1 41rem;
-  box-shadow: 5px 5px 5px;
+  box-shadow: -20px 20px 0px #1510eb;
 }
 .about .row .video video {
   width: 100%;
