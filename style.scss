@@ -318,6 +318,8 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
+
+    
     .video {
       flex: 1 1 41rem;
       //background: blue;
@@ -356,7 +358,7 @@ section {
   }
 }
 
-.services {
+.whatwedo {
   background: var(--light-bg);
 
   .box-container {
@@ -432,6 +434,31 @@ section {
       }
     }
   }
+}
+
+.services {
+  background: var(--light-bg);
+
+  .box-container{
+    @include grid(30rem);
+
+    .box{
+    background: var(--white);
+    text-align: center;
+    padding: 2rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+
+    i{
+    font-size: 3rem;
+    height: 7rem;
+    width: 7rem;
+    line-height: 7rem;
+    border-right: 50%;
+    color:var(--blue);
+    }
+  }
+}
 }
 
 .contact {

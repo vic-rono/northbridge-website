@@ -317,26 +317,26 @@ section {
   line-height: 2;
 }
 
-.services {
+.whatwedo {
   background: var(--light-bg);
 }
-.services .box-container {
+.whatwedo .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
 }
-.services .box-container .box {
+.whatwedo .box-container .box {
   text-align: center;
   padding: 3rem;
   background: var(--white);
   box-shadow: var(--box-shadow);
   border-style: groove;
 }
-.services .box-container .box img {
+.whatwedo .box-container .box img {
   height: 10rem;
   margin-bottom: 1rem;
 }
-.services .box-container .box h3 {
+.whatwedo .box-container .box h3 {
   font-size: 2rem;
   color: var(--black);
   text-transform: capitalize;
@@ -397,6 +397,30 @@ section {
   cursor: pointer;
   text-align: center;
   line-height: 7.5rem;
+}
+
+.services {
+  background: var(--light-bg);
+}
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.services .box-container .box {
+  background: var(--white);
+  text-align: center;
+  padding: 2rem;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+}
+.services .box-container .box i {
+  font-size: 3rem;
+  height: 7rem;
+  width: 7rem;
+  line-height: 7rem;
+  border-right: 50%;
+  color: var(--blue);
 }
 
 .contact {
