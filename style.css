@@ -271,11 +271,12 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
+  margin-top: 50px;
+  margin-bottom: 150px;
 }
 .about .row .video {
   flex: 1 1 41rem;
   box-shadow: -20px 20px 0px #1510eb;
-  margin-bottom: 50px;
 }
 .about .row .video video {
   width: 100%;
@@ -295,8 +296,40 @@ section {
   line-height: 2;
   padding: 1rem 0;
 }
-
-
+.about .row-pic {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.about .row-pic .pic {
+  flex: 1 1 41rem;
+  overflow: hidden;
+  box-shadow: 20px 20px 0px #1510eb;
+}
+.about .row-pic .pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.about .row-pic .humanity {
+  flex: 1 1 41rem;
+}
+.about .row-pic .humanity h3 {
+  font-size: 3.5rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.about .row-pic .humanity p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-transform: capitalize;
+  line-height: 2;
+  padding: 1rem 0;
+}
 .about .box-container {
   margin-top: 3rem;
   display: grid;
