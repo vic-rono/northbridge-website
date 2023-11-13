@@ -275,6 +275,7 @@ section {
 .about .row .video {
   flex: 1 1 41rem;
   box-shadow: -20px 20px 0px #1510eb;
+  margin-bottom: 50px;
 }
 .about .row .video video {
   width: 100%;
@@ -294,6 +295,8 @@ section {
   line-height: 2;
   padding: 1rem 0;
 }
+
+
 .about .box-container {
   margin-top: 3rem;
   display: grid;

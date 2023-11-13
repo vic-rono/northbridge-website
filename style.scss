@@ -318,12 +318,11 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
-
-    
     .video {
       flex: 1 1 41rem;
       //background: blue;
       box-shadow: -20px  20px 0px #1510eb;
+      margin-bottom: 50px;
       video {
         width: 100%;
       }
