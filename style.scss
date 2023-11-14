@@ -341,7 +341,7 @@ section {
     }
   }
 
-  .row-pic {  
+  .row-pic {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -417,7 +417,6 @@ section {
 
 .projects {
   background: var(--black);
-
   .heading {
     color: var(--white);
   }
@@ -437,6 +436,7 @@ section {
           height: 100%;
           width: 100%;
           object-fit: cover;
+          background-repeat: no-repeat;
         }
       }
       .content {
@@ -483,12 +483,34 @@ section {
       box-shadow: var(--box-shadow);
 
       i {
-        font-size: 3rem;
+        font-size: 8rem;
         height: 7rem;
         width: 7rem;
         line-height: 7rem;
         border-right: 50%;
+        margin-bottom: 1rem;
         color: var(--blue);
+      }
+
+      h3 {
+        @include titleText(1.7rem);
+        font-weight: normal;
+        padding: 0.5rem 0;
+      }
+      .service {
+        padding: 1rem 0;
+        @include titleText(5rem);
+        .span {
+          font-size: 2rem;
+        }
+      }
+      .list {
+        padding: 1rem 0;
+
+        p {
+          padding: 1rem 0;
+          @include graphText(1.4rem);
+        }
       }
     }
   }

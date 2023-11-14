@@ -404,6 +404,7 @@ section {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  background-repeat: no-repeat;
 }
 .projects .box-container .box .content {
   display: flex;
@@ -451,12 +452,39 @@ section {
   box-shadow: var(--box-shadow);
 }
 .services .box-container .box i {
-  font-size: 3rem;
+  font-size: 8rem;
   height: 7rem;
   width: 7rem;
   line-height: 7rem;
   border-right: 50%;
+  margin-bottom: 1rem;
   color: var(--blue);
+}
+.services .box-container .box h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+  font-weight: normal;
+  padding: 0.5rem 0;
+}
+.services .box-container .box .service {
+  padding: 1rem 0;
+  font-size: 5rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.services .box-container .box .service .span {
+  font-size: 2rem;
+}
+.services .box-container .box .list {
+  padding: 1rem 0;
+}
+.services .box-container .box .list p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: var(--light-color);
+  text-transform: capitalize;
+  line-height: 2;
 }
 
 .contact {
