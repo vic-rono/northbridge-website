@@ -188,17 +188,16 @@
 
     <!-- projects-starts -->
 
-    <section class="projects" id="projects">
+    <section class="projects">
       <h1 class="heading">Our Projects</h1>
-      <div class="box-container">
+      <div class="box-container" id="waterProjects">
         <a href="images/sossion.jpg" class="box">
     
       <div class="image">
         <img src="images/sossion.jpg" alt="">
-        <img src="images/sossion2.jpg" alt="">
-        <img src="images/sossion4.jpg" alt="">
-      </div>
-      <div class="content">
+        <!-- <img src="images/sossion2.jpg" alt=""> -->
+    </div>
+    <div class="content">
         <div class="info">
         <h3>Water Projects</h3>
         <p></p>
@@ -211,8 +210,6 @@
       
       <div class="image">
         <img src="images/kaplenge.jpg" alt="">
-         <img src="images/kapngetik.jpeg" alt="">
-         <img src="images/kimwarer.jpg" alt="">
       </div>
       <div class="content">
         <div class="info">
@@ -243,7 +240,7 @@
         </div>
 
         <div class="box">
-          <i class="fas fa-home"></i>
+          <i class="fa-solid fa-file"></i>
           <h3>Tender Documentation</h3>
           <div class="service"><span>From Ksh</span>5500</div>
           <div class="list">
@@ -261,7 +258,7 @@
       </section>
       <!-- services-ends -->
 
-    
+   
     <!-- projects-ends -->
 
 <!-- contact-starts -->
@@ -298,9 +295,24 @@
           </div>
         </div>
       </div>
-
     </section>
 
+  <!-- client section -->
+
+<section>
+  <h1 class="heading">Our Clients</h1>
+<div class="client-container">
+<div class="client">
+  <div class="w">
+    <div>
+      <img src="images/b-logo.jpg" alt="Baringo County Governement">
+      <img src="images/e.logo.png" alt="County Government of  Elgeyo-Marakwet">
+      <img src="images/nita.png" alt="National Industrial Training Authority">
+    </div>
+  </div>
+</div>
+</div>
+</section>
     <footer>
       <div class="credit">Northbridge Technologies Limited 2023</div>
     </footer>
@@ -312,6 +324,8 @@
     
     <script>
       lightGallery(document.querySelector('.projects .box-container'));
+      //lightGallery(document.getElementById('waterProjects'));
+
     </script>
   </body>
 </html>

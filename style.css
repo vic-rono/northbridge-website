@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;600&family=Nunito:wght@200;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&display=swap");
 :root {
   --blue: #1510eb;
   --black: #111;
@@ -10,7 +10,7 @@
 }
 
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -357,6 +357,7 @@ section {
   background: var(--light-bg);
 }
 .whatwedo .box-container {
+  pointer-events: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
@@ -567,6 +568,17 @@ section {
   color: var(--light-color);
   text-transform: capitalize;
   line-height: 2;
+}
+
+.client-container {
+  text-align: center;
+  overflow: hidden;
+  padding: 60px 0 0 0;
+}
+.client-container img {
+  height: 10rem;
+  margin: 0 60px;
+  pointer-events: none;
 }
 
 footer {
