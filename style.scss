@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;600&family=Nunito:wght@200;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;600&family=Nunito:wght@200;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&display=swap");
 
 :root {
   --blue: #1510eb;
@@ -11,7 +11,7 @@
 }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -341,7 +341,7 @@ section {
     }
   }
 
-  .row-pic {  
+  .row-pic {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -423,7 +423,6 @@ section {
   }
 
   .box-container {
-
     @include grid(25rem);
     .box {
       cursor: initial;
@@ -433,8 +432,6 @@ section {
       .image {
         height: 40rem;
         overflow: hidden;
-        
-
 
         img {
           height: 100%;
@@ -496,25 +493,25 @@ section {
         color: var(--blue);
       }
 
-      h3{
+      h3 {
         @include titleText(1.7rem);
         font-weight: normal;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
       }
-      .service{
+      .service {
         padding: 1rem 0;
         @include titleText(5rem);
-      .span{
-        font-size: 2rem;
+        .span {
+          font-size: 2rem;
+        }
       }
-      }
-      .list{
+      .list {
         padding: 1rem 0;
 
-      p{
-        padding: 1rem 0;
-        @include graphText(1.4rem);
-      }
+        p {
+          padding: 1rem 0;
+          @include graphText(1.4rem);
+        }
       }
     }
   }
@@ -607,30 +604,25 @@ section {
   }
 }
 
-
-.client-container{
+.client-container {
   //background: var(--light-bg);
   text-align: center;
   overflow: hidden;
-  padding:60px 0 0 0;
-  img{
+  padding: 60px 0 0 0;
+  img {
     height: 10rem;
-    margin:0 60px;
+    margin: 0 60px;
     pointer-events: none;
-    
   }
 }
 
-footer {
+.credits {
+  @include titleText(2rem);
   text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
 
-  .credit {
-    @include titleText(2rem);
-    margin-top: 2rem;
-    padding-top: 1rem;
-
-    span {
-      color: var(--blue);
-    }
+  span {
+    color: var(--blue);
   }
 }

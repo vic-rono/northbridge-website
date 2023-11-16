@@ -581,16 +581,14 @@ section {
   pointer-events: none;
 }
 
-footer {
-  text-align: center;
-}
-footer .credit {
+.credits {
   font-size: 2rem;
   color: var(--black);
   text-transform: capitalize;
+  text-align: center;
   margin-top: 2rem;
   padding-top: 1rem;
 }
-footer .credit span {
+.credits span {
   color: var(--blue);
 }/*# sourceMappingURL=style.css.map */
