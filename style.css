@@ -221,7 +221,7 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, var(--white), transparent);
+  background: linear-gradient(90deg, var(--black), transparent);
 }
 .hero .slide .content {
   width: 50rem;
@@ -231,6 +231,7 @@ section {
   font-size: 6rem;
   color: var(--black);
   text-transform: capitalize;
+  color: var(--white);
   text-transform: uppercase;
 }
 .hero .slide .content p {
@@ -238,6 +239,7 @@ section {
   color: var(--light-color);
   text-transform: capitalize;
   line-height: 2;
+  color: var(--white);
   line-height: 2;
   padding: 1rem 0;
 }
@@ -535,9 +537,12 @@ section {
 .fposts .slide {
   width: 35rem;
   text-align: center;
+  filter: blur(3px);
+  transition: all 1000ms;
 }
-.fposts .slide:hover .image img {
-  transform: scale(1.1);
+.fposts .slide:hover {
+  filter: blur(0px);
+  transition: all 1000ms;
 }
 .fposts .slide .image {
   height: 25rem;
@@ -545,6 +550,7 @@ section {
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: -3rem;
+  filter: grayscale(100%);
 }
 .fposts .slide .image img {
   height: 100%;
@@ -558,7 +564,7 @@ section {
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 }
 .fposts .slide .content h3 {
-  font-size: 2rem;
+  font-size: 4rem;
   color: var(--black);
   text-transform: capitalize;
 }
@@ -568,6 +574,16 @@ section {
   color: var(--light-color);
   text-transform: capitalize;
   line-height: 2;
+}
+
+.head {
+  font-size: 3rem;
+  color: var(--black);
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
 }
 
 .client-container {

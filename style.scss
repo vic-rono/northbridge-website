@@ -265,7 +265,7 @@ section {
       left: 0;
       height: 100%;
       width: 100%;
-      background: linear-gradient(90deg, var(--white), transparent);
+      background: linear-gradient(90deg, var(--black), transparent);
     }
 
     .content {
@@ -274,11 +274,13 @@ section {
 
       h3 {
         @include titleText(6rem);
+        color: var(--white);
         text-transform: uppercase;
       }
 
       p {
         @include graphText(1.6rem);
+        color: var(--white);
         line-height: 2;
         padding: 1rem 0;
       }
@@ -568,10 +570,17 @@ section {
   .slide {
     width: 35rem;
     text-align: center;
+    filter: blur(3px);
+    transition: all 1000ms;
 
-    &:hover .image img {
-      transform: scale(1.1);
+    &:hover {
+      filter: blur(0px);
+      transition: all 1000ms;
     }
+
+    // &:hover .image img {
+    //   //transform: scale(1.1);
+    // }
 
     .image {
       height: 25rem;
@@ -579,6 +588,7 @@ section {
       overflow: hidden;
       margin: 0 auto;
       margin-bottom: -3rem;
+      filter: grayscale(100%);
 
       img {
         height: 100%;
@@ -593,7 +603,7 @@ section {
       box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 
       h3 {
-        @include titleText(2rem);
+        @include titleText(4rem);
       }
 
       p {
@@ -604,11 +614,19 @@ section {
   }
 }
 
+.head{
+  @include titleText(3rem);
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
 .client-container {
   //background: var(--light-bg);
   text-align: center;
   overflow: hidden;
   padding: 60px 0 0 0;
+
   img {
     height: 10rem;
     margin: 0 60px;
