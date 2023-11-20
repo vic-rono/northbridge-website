@@ -22,11 +22,11 @@ window.onscroll = () => {
 
 //carousel from swiperjs.com
 const swiper = new Swiper(".hero-carousel", {
-  
   loop: true,
   grabCursor: true,
   autoplay: {
-    delay: 4000},
+    delay: 4000,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -34,7 +34,28 @@ const swiper = new Swiper(".hero-carousel", {
 });
 
 
+//Emailjs
+function sendMail() {
+  let params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    number: document.getElementById("number").value,
+    message: document.getElementById("message").value,
+  };
 
+  const serviceID = "service_zdfvznc";
+  const templateID = "template_bx2gx4v";
 
-
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("number").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("We've Received Your Message.Thank You!!");
+    })
+    .catch((err) => console.log(err));
+}
 

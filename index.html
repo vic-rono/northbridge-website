@@ -255,7 +255,7 @@
     <section class="contact" id="contact">
       <h1 class="heading">Contact Us</h1>
       <div class="row">
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <div class="forms">
           <h3>Talk to Us</h3>
           <input type="text" id="name" placeholder="Name" class="box" />
           <input type="email" id="email" placeholder="Email" class="box" />
@@ -264,16 +264,14 @@
             name=""
             placeholder="Message"
             class="box"
-            id="texty"
+            id="message"
             cols="30"
             rows="10"
           ></textarea>
-          <input type="submit" value="Send" class="btn" />
-        </form>
-        <!-- no kipnyekwei building add kasoiyo trading centre  -->
+          <input type="submit" onclick="sendMail()" class="btn" />
+        </div>
         <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7979.337641388719!2d35.745959316442885!3d0.49600095474130085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1698662940952!5m2!1sen!2ske"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.678159819075!2d35.758133176977424!3d0.4802586523775631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1780d7e87edc4dbd%3A0x1b8b6c024e2bfb1f!2sKasoyo%20Trading%20Centre!5e0!3m2!1sen!2ske!4v1700479942100!5m2!1sen!2ske"
           width="600"
           height="450"
           style="border: 0"
@@ -283,8 +281,6 @@
         ></iframe>
       </div>
     </section>
-
-    <!-- dont forget functionality for collecting details -->
 
     <!-- contact-ends -->
 
@@ -297,7 +293,7 @@
           </div>
           <div class="content">
             <h3>Coming Soon</h3>
-            <p>Articles with pieces of information</p>
+            <p>Series of helpful articles</p>
           </div>
         </div>
       </div>
@@ -327,41 +323,24 @@
     </section>
     <section>
       <div class="credits">
-        &#169; 2023 <span>Northbridge</span> Technologies Limited | All Rights
-        Reserved
+        &#169; 2023 Northbridge Technologies Limited | All Rights Reserved
       </div>
     </section>
     <!--link js file-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="script.js"></script>
 
-    <script>
-      lightGallery(document.querySelector(".projects .box-container"));
-      //lightGallery(document.getElementById('waterProjects'));
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("HCwpA2DjEc9VIYiU9");
+      })();
     </script>
-    <script>
-      function sendEmail() {
-        Email.send({
-          SecureToken : "feb76c5e-0ce5-4b64-b45a-761bdc5d4bd7",
-          To : "northbridgesolutions75@gmail.com",
-          From : document.getElementById("email").value,
-          Subject : "Northbridge Web Clients",
-          Body : "Name: " + document.getElementbyId("name").value 
-               + "<br> Email: " + document.getElementbyId("email").value
-               + "Phone no. : " + document.getElementbyId("name").value  
-}).then(
-  message => alert(message)
-);
-      }
-    </script>
+
+    ?
   </body>
 </html>
-
-
-<!--  SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body" -->

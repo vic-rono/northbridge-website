@@ -486,9 +486,9 @@ section {
       box-shadow: var(--box-shadow);
 
       i {
-        font-size: 8rem;
+        font-size: 7rem;
         height: 7rem;
-        width: 7rem;
+        width: 6rem;
         line-height: 7rem;
         border-right: 50%;
         margin-bottom: 1rem;
@@ -534,7 +534,7 @@ section {
       width: 100%;
     }
 
-    form {
+    .forms {
       flex: 1 1 41rem;
       background: var(--white);
       padding: 2rem;
@@ -620,7 +620,13 @@ section {
   margin-top: 2rem;
   padding-top: 1rem;
   padding-left: 2rem;
+  
+  span{
+    color: var(--blue);
+  }
 }
+
+
 .client-container {
   //background: var(--light-bg);
   text-align: center;

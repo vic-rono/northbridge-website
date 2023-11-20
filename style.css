@@ -455,9 +455,9 @@ section {
   box-shadow: var(--box-shadow);
 }
 .services .box-container .box i {
-  font-size: 8rem;
+  font-size: 7rem;
   height: 7rem;
-  width: 7rem;
+  width: 6rem;
   line-height: 7rem;
   border-right: 50%;
   margin-bottom: 1rem;
@@ -505,18 +505,18 @@ section {
   flex: 1 1 41rem;
   width: 100%;
 }
-.contact .row form {
+.contact .row .forms {
   flex: 1 1 41rem;
   background: var(--white);
   padding: 2rem;
 }
-.contact .row form h3 {
+.contact .row .forms h3 {
   font-size: 2.5rem;
   color: var(--black);
   text-transform: capitalize;
   padding-bottom: 1rem;
 }
-.contact .row form .box {
+.contact .row .forms .box {
   margin: 0.7rem 0;
   width: 100%;
   padding: 1.5rem 0;
@@ -526,10 +526,10 @@ section {
   font-size: 1.6rem;
   color: var(--light-color);
 }
-.contact .row form .box:focus {
+.contact .row .forms .box:focus {
   border-color: var(--blue);
 }
-.contact .row form .box textarea {
+.contact .row .forms .box textarea {
   height: 15rem;
   resize: none;
 }
@@ -584,6 +584,9 @@ section {
   margin-top: 2rem;
   padding-top: 1rem;
   padding-left: 2rem;
+}
+.head span {
+  color: var(--blue);
 }
 
 .client-container {
