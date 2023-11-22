@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>👷🏽‍♂️Northbridge</title>
+    <Link rel="icon" href="images/logo_draft.png" type="image/x-icon"></Link>
 
     <!--font awesome cdn-->
     <link
@@ -16,12 +17,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+     <!--lightweight gallery cdn for the Our Projects gallery-->
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"
     />
-    <!--lightweiight gallery cdn for the Our Projects gallery-->
+    
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -45,7 +47,6 @@
     </header>
 
     <!-- contact section -->
-    <!-- No social media presence yet; will add later -->
     <div class="contact-info">
       <div id="close-contact-info" class="fa-solid fa-xmark"></div>
       <div class="info">
@@ -103,7 +104,7 @@
         <div class="swiper-button-prev"></div>
       </div>
     </section>
-    <!-- hero-section-ends -->
+    
 
     <!-- about section -->
     <section class="about" id="about">
@@ -156,7 +157,7 @@
       </div>
     </section>
 
-    <!-- about-section-ends -->
+ 
 
     <!-- services-start -->
 
@@ -181,28 +182,31 @@
       </div>
     </section>
 
-    <!-- services-ends -->
+    
 
     <!-- projects-starts -->
 
     <section class="projects">
       <h1 class="heading">Our Projects</h1>
-      <div class="box-container" id="waterProjects">
+      <div class="box-container swiper-wrapper" id="waterProjects">
         <a href="images/sossion.jpg" class="box">
           <div class="image">
-            <img src="images/sossion.jpg" alt="" />
-            <!-- <img src="images/sossion2.jpg" alt=""> -->
+        <img src="images/kimwarer.jpg" alt="">
+        <img src="images/kaplenge.jpg" alt="">
           </div>
+    
+          
+            
           <div class="content">
             <div class="info">
               <h3>Water Projects</h3>
               <p></p>
             </div>
             <i class="fa-solid fa-angles-right"></i>
-          </div>
+          </div> 
         </a>
 
-        <a href="images/kaplenge.jpg" class="box">
+        <!-- <a href="images/kaplenge.jpg" class="box">
           <div class="image">
             <img src="images/kaplenge.jpg" alt="" />
           </div>
@@ -213,7 +217,7 @@
             </div>
             <i class="fa-solid fa-angles-right"></i>
           </div>
-        </a>
+        </a> -->
       </div>
     </section>
 
@@ -247,9 +251,7 @@
         </div>
       </div>
     </section>
-    <!-- services-ends -->
-
-    <!-- projects-ends -->
+  
 
     <!-- contact-starts -->
     <section class="contact" id="contact">
@@ -257,7 +259,7 @@
       <div class="row">
         <div class="forms">
           <h3>Talk to Us</h3>
-          <input type="text" id="name" placeholder="Name" class="box" />
+          <input type="text" id="name" placeholder="FullName" class="box" />
           <input type="email" id="email" placeholder="Email" class="box" />
           <input type="number" id="number" placeholder="Number" class="box" />
           <textarea
@@ -282,7 +284,7 @@
       </div>
     </section>
 
-    <!-- contact-ends -->
+   <!-- Featured posts -->
 
     <section class="fposts" id="fposts">
       <h1 class="heading">Featured Posts</h1>
@@ -341,6 +343,6 @@
       })();
     </script>
 
-    ?
+    
   </body>
 </html>
