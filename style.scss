@@ -444,12 +444,12 @@ section {
       }
       .content {
         display: flex;
-        gap: 0.5rem;
+        gap: .5rem;
         background: var(--white);
         justify-content: space-between;
 
         .info {
-          padding: 1rem;
+          padding: 1rem 2rem;
 
           h3 {
             @include titleText(1.7rem);
@@ -459,7 +459,7 @@ section {
           }
         }
         i {
-          width: 6rem;
+          width: 7.5rem;
           font-size: 3rem;
           background: var(--blue);
           color: var(--white);

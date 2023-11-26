@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>👷🏽‍♂️Northbridge</title>
-    <Link rel="icon" href="images/logo_draft.png" type="image/x-icon"></Link>
+    <link rel="icon" href="images/logo_draft.png" type="image/x-icon" />
 
     <!--font awesome cdn-->
     <link
@@ -17,13 +17,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-     <!--lightweight gallery cdn for the Our Projects gallery-->
+    <!--lightweight gallery cdn for the Our Projects gallery-->
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"
     />
-    
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -37,7 +36,7 @@
         <a href="#whatwedo">What We Do</a>
         <a href="#services">Our Services</a>
         <a href="#contact">Contact</a>
-        <a href="#posts">Featured Posts</a>
+        <a href="#fposts">Featured Posts</a>
       </nav>
 
       <div class="icons">
@@ -71,7 +70,6 @@
     <section class="hero" id="hero">
       <div class="swiper hero-carousel">
         <div class="swiper-wrapper">
-          <!--stock imagesfrom unsplash.com -->
           <section
             class="swiper-slide slide"
             style="background: url(images/building.jpg) no-repeat"
@@ -104,7 +102,6 @@
         <div class="swiper-button-prev"></div>
       </div>
     </section>
-    
 
     <!-- about section -->
     <section class="about" id="about">
@@ -130,7 +127,7 @@
         <div class="humanity">
           <h3>Service to Humanity</h3>
           <p>
-            We have provided accesible water to remote villages in Baringo, .
+            We have provided accesible water to remote villages in Baringo,
             Reach out to us to learn more on how you can impact lives.
           </p>
           <!-- learn more section will be updated in the final version -->
@@ -157,8 +154,6 @@
       </div>
     </section>
 
- 
-
     <!-- services-start -->
 
     <section class="whatwedo" id="whatwedo">
@@ -167,57 +162,100 @@
         <div class="box">
           <img src="images/builder.png" alt="" />
           <h3>Building Works</h3>
-          <!-- <p>building words that i will fill later</p> -->
         </div>
         <div class="box">
           <img src="images/grader.png" alt="" />
           <h3>Roads Works</h3>
-          <!-- <p>roads words that i will fill later</p> -->
         </div>
         <div class="box">
           <img src="images/water.png" alt="" />
           <h3>Water Works</h3>
-          <!-- <p>building words that i will fill later</p> -->
         </div>
       </div>
     </section>
 
-    
-
     <!-- projects-starts -->
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h1 class="heading">Our Projects</h1>
-      <div class="box-container swiper-wrapper" id="waterProjects">
-        <a href="images/sossion.jpg" class="box">
+      <div class="box-container">
+        <a href="images/kimwarer.jpg" class="box">
           <div class="image">
-        <img src="images/kimwarer.jpg" alt="">
-        <img src="images/kaplenge.jpg" alt="">
+            <img src="images/kimwarer.jpg" alt="" />
           </div>
-    
-          
-            
+
           <div class="content">
             <div class="info">
-              <h3>Water Projects</h3>
-              <p></p>
+              <h3>Kimwarer ECD</h3>
+              <p>Construction</p>
             </div>
             <i class="fa-solid fa-angles-right"></i>
-          </div> 
+          </div>
         </a>
 
-        <!-- <a href="images/kaplenge.jpg" class="box">
+        <a href="images/kaplenge.jpg" class="box">
           <div class="image">
             <img src="images/kaplenge.jpg" alt="" />
           </div>
           <div class="content">
             <div class="info">
-              <h3>Building Projects</h3>
-              <p></p>
+              <h3>Kaplenge ECD</h3>
+              <p>Construction</p>
             </div>
             <i class="fa-solid fa-angles-right"></i>
           </div>
-        </a> -->
+        </a>
+
+        <a href="images/osnone-desilt.jpeg" class="box">
+          <div class="image">
+            <img src="images/osnone-desilt.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Osnone(desilting)</h3>
+              <p>Water Works</p>
+            </div>
+            <i class="fa-solid fa-angles-right"></i>
+          </div>
+        </a>
+        <a href="images/osnone-pipework.jpg" class="box">
+          <div class="image">
+            <img src="images/osnone-pipework.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Osnone(pipework)</h3>
+              <p>Water Works</p>
+            </div>
+            <i class="fa-solid fa-angles-right"></i>
+          </div>
+        </a>
+
+        <a href="images/kisok.jpg" class="box">
+          <div class="image">
+            <img src="images/kisok.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Kisok Secondary</h3>
+              <p>Renovations</p>
+            </div>
+            <i class="fa-solid fa-angles-right"></i>
+          </div>
+        </a>
+
+        <a href="images/kurumbp.jpg" class="box">
+          <div class="image">
+            <img src="images/kurumbp.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Kurumbopsoo primary</h3>
+              <p>Renovations</p>
+            </div>
+            <i class="fa-solid fa-angles-right"></i>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -245,21 +283,29 @@
             <p>Competitive quotes</p>
             <p>Quantity Surveyor support</p>
             <p>Responding through IFMIS</p>
-            <p>Handling statutory requirents</p>
+            <p>Handling statutory requirements</p>
             <p>KRA, NCA and permits clearance</p>
           </div>
         </div>
       </div>
     </section>
-  
 
     <!-- contact-starts -->
     <section class="contact" id="contact">
       <h1 class="heading">Contact Us</h1>
       <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.678159819075!2d35.758133176977424!3d0.4802586523775631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1780d7e87edc4dbd%3A0x1b8b6c024e2bfb1f!2sKasoyo%20Trading%20Centre!5e0!3m2!1sen!2ske!4v1700479942100!5m2!1sen!2ske"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
         <div class="forms">
           <h3>Talk to Us</h3>
-          <input type="text" id="name" placeholder="FullName" class="box" />
+          <input type="text" id="name" placeholder="Full Name" class="box" />
           <input type="email" id="email" placeholder="Email" class="box" />
           <input type="number" id="number" placeholder="Number" class="box" />
           <textarea
@@ -272,19 +318,10 @@
           ></textarea>
           <input type="submit" onclick="sendMail()" class="btn" />
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.678159819075!2d35.758133176977424!3d0.4802586523775631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1780d7e87edc4dbd%3A0x1b8b6c024e2bfb1f!2sKasoyo%20Trading%20Centre!5e0!3m2!1sen!2ske!4v1700479942100!5m2!1sen!2ske"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
       </div>
     </section>
 
-   <!-- Featured posts -->
+    <!-- Featured posts -->
 
     <section class="fposts" id="fposts">
       <h1 class="heading">Featured Posts</h1>
@@ -295,7 +332,7 @@
           </div>
           <div class="content">
             <h3>Coming Soon</h3>
-            <p>Series of helpful articles</p>
+            <!-- <p></p> -->
           </div>
         </div>
       </div>
@@ -309,7 +346,7 @@
         <div class="client">
           <div class="w">
             <div>
-              <img src="images/b-logo.jpg" alt="Baringo County Governement" />
+              <img src="images/b-logo.jpg" alt="Baringo County Government" />
               <img
                 src="images/e.logo.png"
                 alt="County Government of  Elgeyo-Marakwet"
@@ -330,9 +367,13 @@
     </section>
     <!--link js file-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
     <script src="script.js"></script>
+
+    <script>
+      lightGallery(document.querySelector(".projects .box-container"));
+    </script>
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -342,7 +383,5 @@
         emailjs.init("HCwpA2DjEc9VIYiU9");
       })();
     </script>
-
-    
   </body>
 </html>

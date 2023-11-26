@@ -25,16 +25,13 @@ const swiper = new Swiper(".hero-carousel", {
   loop: true,
   grabCursor: true,
   autoplay: {
-    delay: 4000,
+    delay:6000,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
-
-
-
 
 //Emailjs
 function sendMail() {
@@ -60,4 +57,5 @@ function sendMail() {
     })
     .catch((err) => console.log(err));
 }
+
 

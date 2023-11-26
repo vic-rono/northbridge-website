@@ -416,7 +416,7 @@ section {
   justify-content: space-between;
 }
 .projects .box-container .box .content .info {
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 .projects .box-container .box .content .info h3 {
   font-size: 1.7rem;
@@ -430,7 +430,7 @@ section {
   line-height: 2;
 }
 .projects .box-container .box .content i {
-  width: 6rem;
+  width: 7.5rem;
   font-size: 3rem;
   background: var(--blue);
   color: var(--white);
