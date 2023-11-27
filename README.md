@@ -1,4 +1,4 @@
 # northbridge-website
 website for Northbridge Technologies Limited.
 
-Link; northbridge.netlify.app
+Link; [northbridge.netlify.app](url)
